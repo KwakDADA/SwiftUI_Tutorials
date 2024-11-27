@@ -7,7 +7,12 @@
 
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData.json")
+/// SwiftUI updates a view only when an observable property changes and the view’s body reads the property directly.
+@Observable
+class ModelData {
+    var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
