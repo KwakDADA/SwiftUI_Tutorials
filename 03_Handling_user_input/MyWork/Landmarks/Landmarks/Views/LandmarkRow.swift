@@ -42,7 +42,9 @@ struct LandmarkRow: View {
 #Preview {
     // Group is a container for grouping view content.
     // Xcode renders the group’s child views stacked as one preview in the canvas.
-    Group {
+    let landmarks = ModelData().landmarks
+    
+    return Group {
         LandmarkRow(landmark: landmarks[0])
         LandmarkRow(landmark: landmarks[1])
     }

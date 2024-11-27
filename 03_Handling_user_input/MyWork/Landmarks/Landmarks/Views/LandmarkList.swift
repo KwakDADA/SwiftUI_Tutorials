@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    // State is a value, or a set of values, that can change over time,
-    // and that affects a view’s behavior, content, or layout.
+    // The @Environment property wrapper enables you to read the model data of the current view
+    @Environment(ModelData.self) var modelData
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
@@ -43,4 +43,6 @@ struct LandmarkList: View {
 
 #Preview {
     LandmarkList()
+        // Adding an environment(_:) modifier passes the data object down through the environment.
+        .environment(ModelData())
 }
