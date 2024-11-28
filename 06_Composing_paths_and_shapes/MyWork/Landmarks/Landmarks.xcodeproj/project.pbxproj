@@ -166,8 +166,8 @@
 		C9A4EF8C2CB688A000037DF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C938DE5E2CF84BDD009505E1 /* Categories */,
 				C95D735A2CB4CD9D00B739EE /* ContentView.swift */,
+				C938DE5E2CF84BDD009505E1 /* Categories */,
 				C9B1A8DA2CF7095000343433 /* Landmarks */,
 				C9B1A8D92CF7093B00343433 /* Helpers */,
 			);
