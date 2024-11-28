@@ -26,6 +26,7 @@
 		C9D4FF752CB7905E0018812F /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FF742CB7905E0018812F /* LandmarkRow.swift */; };
 		C9D4FF772CB795BF0018812F /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FF762CB795BF0018812F /* LandmarkList.swift */; };
 		C9D4FF792CB798EE0018812F /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4FF782CB798EE0018812F /* LandmarkDetail.swift */; };
+		C9D8D8C22CF8648300BECCD6 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8D8C12CF8648300BECCD6 /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C9D4FF742CB7905E0018812F /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		C9D4FF762CB795BF0018812F /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		C9D4FF782CB798EE0018812F /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		C9D8D8C12CF8648300BECCD6 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				C95D73582CB4CD9D00B739EE /* LandmarksApp.swift */,
 				C9A4EF8C2CB688A000037DF2 /* Views */,
 				C95D735C2CB4CD9F00B739EE /* Assets.xcassets */,
+				C9D8D8C12CF8648300BECCD6 /* HexagonParameters.swift */,
 				C9A4EF8E2CB688D700037DF2 /* Resources */,
 				C9A4EF8D2CB688BA00037DF2 /* Model */,
 				C95D735E2CB4CD9F00B739EE /* Preview Content */,
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D8D8C22CF8648300BECCD6 /* HexagonParameters.swift in Sources */,
 				C95D735B2CB4CD9D00B739EE /* ContentView.swift in Sources */,
 				C9A4EF8B2CB687B100037DF2 /* ModelData.swift in Sources */,
 				C95D73872CB4F5D300B739EE /* MapView.swift in Sources */,
