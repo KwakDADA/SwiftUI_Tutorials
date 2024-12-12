@@ -29,6 +29,9 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
     
     // manage information about the landmark’s location
     private var coordinates: Coordinates
