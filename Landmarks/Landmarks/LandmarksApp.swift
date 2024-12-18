@@ -16,6 +16,13 @@ struct LandmarksApp: App {
             ContentView()
                 .environment(modelData)
         }
+        #if !os (watchOS)
+        // Scene Modifier
+        .commands {
+            // To make use of commands in an app, you have to apply them to a scene, which you’ll do next.
+            LandmarkCommands() // 씬에 명령 추가
+        }
+        #endif
         
         #if os(watchOS)
         WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
