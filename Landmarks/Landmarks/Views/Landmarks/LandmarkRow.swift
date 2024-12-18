@@ -15,8 +15,18 @@ struct LandmarkRow: View {
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
+                .cornerRadius(5)
             
-            Text(landmark.name)
+            VStack(alignment: .leading) {
+                Text(landmark.name)
+                    .bold()
+                // using conditional compilation is appropriate because the differences are small.
+                #if !os(watchOS)
+                Text(landmark.park)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                #endif
+            }
             
             Spacer()
             
@@ -26,6 +36,7 @@ struct LandmarkRow: View {
                     .foregroundStyle(.yellow) // system images are vector based, it can be changed their color with the foregroundStyle(_:) modifier.
             }
         }
+        .padding(.vertical, 4)
     }
 }
 
