@@ -35,4 +35,8 @@ enum Theme: String {
     var mainColor: Color {
         Color(rawValue) // 열거형의 rawValue를 사용하여 컬러 반환
     }
+    
+    var name: String {
+        rawValue.capitalized
+    }
 }
